@@ -1,12 +1,9 @@
-//const { fishMenu } = require("./restaurant.js")
-import { boatInventory } from "./fishingBoat.js";
+const dailyPriceLimit = 3.49;
+const { fishMenu } = require("./restaurant.js");
 
-// Call the function and store the result
-const todaysCatch = boatInventory();
+// Generate menu with the daily price limit
+const todaysMenu = fishMenu(dailyPriceLimit);
 
-// Log the result (not just the function)
-console.log(todaysCatch);
-
-//const dailyPriceLimit = 3.99;
-//const menu = fishMenu(dailyPriceLimit);
-//console.log(menu)
+// Display the menu
+console.log("\n=== Fish Market Daily Report ===\n");
+console.log(todaysMenu);

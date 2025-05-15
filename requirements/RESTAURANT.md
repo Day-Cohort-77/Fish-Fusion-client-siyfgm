@@ -25,3 +25,24 @@ This module must import and invoke the function that is exported by the fish mon
         <section class="menu__item">Grilled Tuna</section>
     </article>
     ```
+
+1. What is the overall goal?
+ to provide a menu that only shows the fish the restaurant has currently.
+2. How many modules will be involved to make the goal happen?
+ 3, fishing boat, fishmonger, and restaurant.
+3. what is the responsibility of each module?
+    fishingBoat- catches the fish and stores that value in a function called boatInventory
+                 exports that function to the fishMonger.
+    fishMonger - import boatInventory from the fishingboat module.
+               - define the function mongerInventory
+               - constraints for the fishmonger(buys 10 of each fish that is less than $7.50 in price and     has a quantity of atleast 10).
+               - The mongerInventory function should be passed the value of the boatInventory function. 
+               - it should then use logic to filter the array and store the acceptable outputs in a new array.
+               - It should also define a new function called forChef that is passed the return value of the mongerInventory. 
+               - The chefs price limit should be passed in as an argument to the forChef function. 
+               - the forChef function should use logic to filter through the mongers inventory and store all acceptable fish in a new array.
+               - The forChef function should be exported 
+               
+    restaurant -import forChef function
+               -The chef of the restaurant declaires the max budget per fish
+               -

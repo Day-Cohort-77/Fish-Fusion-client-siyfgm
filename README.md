@@ -33,3 +33,6 @@ There are 3 different actors in this system, and you will write functions in mul
 | 3   | [The Restaurant](./requirements/RESTAURANT.md) |
 | 4   | [Menu Example](./requirements/EXAMPLE_OUTPUT.md) |
 | 5   | [Advanced Iteration](./requirements/MAP_METHOD.md) |
+
+
+Algorithmic thinking:
